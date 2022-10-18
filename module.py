@@ -8,4 +8,5 @@ class DiceThrowing:
         result = []
         for i in range(amount):
             result.append(random.randint(1, self.edges))
-        return result   
+        return result
+    
