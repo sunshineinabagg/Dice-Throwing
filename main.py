@@ -1,4 +1,4 @@
-from module import *
+from DiceThrowing.dicethrowing import DiceThrowing
 
 if __name__ == '__main__':
     dice = DiceThrowing(20)
