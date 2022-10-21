@@ -13,6 +13,6 @@ class DiceThrowing:
 def edges_amount():
     edges = input('How many edges on your dices? Choose 6, 8 or 20. | ')
     while edges not in ('6', '8', '20'):
-        print('\nIncorrect answer. Please, choose againю')
+        print('\nIncorrect answer. Please, choose again')
         edges = input('How many edges on your dices? Choose 6, 8 or 20. | ')
     return edges
