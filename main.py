@@ -1,11 +1,14 @@
-from DiceThrowing.dicethrowing import DiceThrowing
+from DiceThrowing.dicethrowing import DiceThrowing, edges_amount
 
 if __name__ == '__main__':
-    dice = DiceThrowing(20)
+
+    edges = edges_amount()
+    dice = DiceThrowing(int(edges))
+    
     while True:
-        a = int(input('How many dices you want to throw? \n'))
-        if a > 0:
-            print(dice.throw(a))
+        dices = int(input('\nHow many dices you want to throw? | '))
+        if dices > 0:
+            print(dice.throw(dices))
         else:
-            print('Stop time')
+            print('\nStop time\n')
             break            
