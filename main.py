@@ -6,9 +6,13 @@ if __name__ == '__main__':
     dice = DiceThrowing(int(edges))
     
     while True:
-        dices = int(input('\nHow many dices you want to throw? | '))
+        dices = input('\nHow many dices you want to throw? | ')
+        while dices.isnumeric() == False:
+            print('\nIncorrect answer. Please, choose againю')
+            dices = input('How many dices you want to throw? | ')
+        dices = int(dices)
         if dices > 0:
             print(dice.throw(dices))
         else:
             print('\nStop time\n')
-            break            
+            break
